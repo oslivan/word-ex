@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  translation: MyText
+  phonetic: MyString
+  sentence: MyText
+  error_count: 1
+  try_count: 1
+  difficult_coefficient: 1.5
+  word_src: one
+
+two:
+  name: MyString
+  translation: MyText
+  phonetic: MyString
+  sentence: MyText
+  error_count: 1
+  try_count: 1
+  difficult_coefficient: 1.5
+  word_src: two

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @word_src.name %>
+</p>
+
+<p>
+  <strong>Create person:</strong>
+  <%= @word_src.create_person %>
+</p>
+
+<%= link_to 'Edit', edit_word_src_path(@word_src) %> |
+<%= link_to 'Back', word_srcs_path %>

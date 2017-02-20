@@ -1,0 +1,1 @@
+json.partial! "word_srcs/word_src", word_src: @word_src

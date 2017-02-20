@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @word.name %>
+</p>
+
+<p>
+  <strong>Translation:</strong>
+  <%= @word.translation %>
+</p>
+
+<p>
+  <strong>Phonetic:</strong>
+  <%= @word.phonetic %>
+</p>
+
+<p>
+  <strong>Sentence:</strong>
+  <%= @word.sentence %>
+</p>
+
+<p>
+  <strong>Error count:</strong>
+  <%= @word.error_count %>
+</p>
+
+<p>
+  <strong>Try count:</strong>
+  <%= @word.try_count %>
+</p>
+
+<p>
+  <strong>Difficult coefficient:</strong>
+  <%= @word.difficult_coefficient %>
+</p>
+
+<p>
+  <strong>Word src:</strong>
+  <%= @word.word_src %>
+</p>
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

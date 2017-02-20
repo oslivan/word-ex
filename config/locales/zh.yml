@@ -1,0 +1,32 @@
+zh:
+  hello: hello
+  activerecord:
+    attributes:
+      word:
+        difficult_coefficient: 
+        error_count: 
+        name: 
+        phonetic: 
+        sentence: 
+        translation: 
+        try_count: 
+        word_src_id: 
+    models:
+      word: 
+  create: 
+  delete: 
+  helpers:
+    label:
+      word:
+        difficult_coefficient: 
+        error_count: 
+        name: 
+        phonetic: 
+        sentence: 
+        translation: 
+        try_count: 
+        word_src_id: 
+    submit:
+      word:
+        create: 
+  name: 

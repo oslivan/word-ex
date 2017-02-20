@@ -1,0 +1,27 @@
+<%= form_for(word_src) do |f| %>
+  <% if word_src.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(word_src.errors.count, "error") %> prohibited this word_src from being saved:</h2>
+
+      <ul>
+      <% word_src.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :create_person %>
+    <%= f.text_field :create_person %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
