@@ -5,14 +5,14 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Translation</th>
-      <th>Phonetic</th>
-      <th>Sentence</th>
-      <th>Error count</th>
-      <th>Try count</th>
-      <th>Difficult coefficient</th>
-      <th>Word src</th>
+	<th><%= I18n.t('activerecord.attributes.word.name') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.translation') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.phonetic') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.sentence') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.error_count') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.try_count') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.difficult_coefficient') %></th>
+	<th><%= I18n.t('activerecord.attributes.word.word_src') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,9 +28,9 @@
         <td><%= word.try_count %></td>
         <td><%= word.difficult_coefficient %></td>
         <td><%= word.word_src %></td>
-        <td><%= link_to 'Show', word %></td>
-        <td><%= link_to 'Edit', edit_word_path(word) %></td>
-        <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to I18n.t("operate.show"), word %></td>
+        <td><%= link_to I18n.t("operate.edit"), edit_word_path(word) %></td>
+				<td><%= link_to I18n.t("operate.destroy"), word, method: :delete, data: { confirm: "#{I18n.t('operate.are_you_sure')}" } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,44 +1,44 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.name') %>:</strong>
   <%= @word.name %>
 </p>
 
 <p>
-  <strong>Translation:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.translation') %>:</strong>
   <%= @word.translation %>
 </p>
 
 <p>
-  <strong>Phonetic:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.phonetic') %>:</strong>
   <%= @word.phonetic %>
 </p>
 
 <p>
-  <strong>Sentence:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.sentence') %>:</strong>
   <%= @word.sentence %>
 </p>
 
 <p>
-  <strong>Error count:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.error_count') %>:</strong>
   <%= @word.error_count %>
 </p>
 
 <p>
-  <strong>Try count:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.try_count') %>:</strong>
   <%= @word.try_count %>
 </p>
 
 <p>
-  <strong>Difficult coefficient:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.difficult_coefficient') %>:</strong>
   <%= @word.difficult_coefficient %>
 </p>
 
 <p>
-  <strong>Word src:</strong>
+<strong><%= I18n.t('activerecord.attributes.word.word_src') %>:</strong>
   <%= @word.word_src %>
 </p>
 
-<%= link_to 'Edit', edit_word_path(@word) %> |
-<%= link_to 'Back', words_path %>
+<%= link_to I18n.t('operate.edit'), edit_word_path(@word) %> |
+<%= link_to I18n.t('operate.back'), words_path %>

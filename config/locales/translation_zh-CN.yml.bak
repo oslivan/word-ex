@@ -1,0 +1,21 @@
+zh-CN:
+  activerecord:
+    models:
+      word: 单词  #g
+      word_src: 来源  #g
+
+    attributes:
+      word:
+        difficult_coefficient: 难度系数  #g
+        name: 名称  #g
+        phonetic: 音标  #g
+        sentence: 句子  #g
+        translation: 翻译  #g
+        error_count: 错误次数
+        try_count: 尝试次数
+        word_src: :activerecord.models.word_src  #g
+        word_src_id: :activerecord.models.word_src  #g
+
+      word_src:
+        create_person: 创建人  #g
+        name: 名称  #g

@@ -1,0 +1,31 @@
+<p id="notice"><%%= notice %></p>
+
+<h1><%= plural_table_name.titleize %></h1>
+
+<table>
+  <thead>
+    <tr>
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+	<th><%%= I18n.t('<%= "activerecord.attributes.#{singular_table_name}.#{attribute.name}" %>') %></th>
+<% end -%>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
+      <tr>
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+        <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
+<% end -%>
+        <td><%%= link_to I18n.t("operate.show"), <%= singular_table_name %> %></td>
+        <td><%%= link_to I18n.t("operate.edit"), edit_<%= singular_table_name %>_path(<%= singular_table_name %>) %></td>
+				<td><%%= link_to I18n.t("operate.destroy"), <%= singular_table_name %>, method: :delete, data: { confirm: "#{I18n.t('operate.are_you_sure')}" } %></td>
+      </tr>
+    <%% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%%= link_to 'New <%= singular_table_name.titleize %>', new_<%= singular_table_name %>_path %>

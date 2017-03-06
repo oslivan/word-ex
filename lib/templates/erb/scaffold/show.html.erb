@@ -1,0 +1,11 @@
+<p id="notice"><%%= notice %></p>
+
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+<p>
+<strong><%%= I18n.t('<%= "activerecord.attributes.#{singular_table_name}.#{attribute.name}" %>') %>:</strong>
+  <%%= @<%= singular_table_name %>.<%= attribute.name %> %>
+</p>
+
+<% end -%>
+<%%= link_to I18n.t('operate.edit'), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
+<%%= link_to I18n.t('operate.back'), <%= index_helper %>_path %>

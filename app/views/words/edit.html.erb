@@ -1,6 +1,6 @@
-<h1>Editing Word</h1>
+<h1>Edit Word</h1>
 
 <%= render 'form', word: @word %>
 
-<%= link_to 'Show', @word %> |
-<%= link_to 'Back', words_path %>
+<%= link_to I18n.t('operate.show'), @word %> |
+<%= link_to I18n.t('operate.back'), words_path %>

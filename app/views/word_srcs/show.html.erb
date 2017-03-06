@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+<strong><%= I18n.t('activerecord.attributes.word_src.name') %>:</strong>
   <%= @word_src.name %>
 </p>
 
 <p>
-  <strong>Create person:</strong>
+<strong><%= I18n.t('activerecord.attributes.word_src.create_person') %>:</strong>
   <%= @word_src.create_person %>
 </p>
 
-<%= link_to 'Edit', edit_word_src_path(@word_src) %> |
-<%= link_to 'Back', word_srcs_path %>
+<%= link_to I18n.t('operate.edit'), edit_word_src_path(@word_src) %> |
+<%= link_to I18n.t('operate.back'), word_srcs_path %>
